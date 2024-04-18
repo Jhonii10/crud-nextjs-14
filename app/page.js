@@ -1,3 +1,4 @@
+import Navbar from "./components/navbar";
 import Task from "./components/task";
 import { prisma } from "./libs/prisma";
 
@@ -13,6 +14,7 @@ export default async function Home() {
 
   return (
     <section className='container mx-auto'>
+    
     <div className='grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6'>
       {
         tasks?.map(({id, title , description , createdAt})=>{
@@ -21,7 +23,9 @@ export default async function Home() {
           )
         })
       }
+    
     </div>
+    
     </section>
   );
 }
