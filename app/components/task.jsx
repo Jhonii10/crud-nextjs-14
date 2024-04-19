@@ -9,7 +9,7 @@ export default function Task({ id , title , description , createdAt}) {
  
 
   const deleteTasks = async ()=>{
-    const res = await fetch(`http://localhost:3000/api/tasks/${id}`, { method : "DELETE" })
+    const res = await fetch(`/api/tasks/${id}`, { method : "DELETE" })
     if (res.ok) {
         router.refresh();
         
