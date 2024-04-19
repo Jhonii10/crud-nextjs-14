@@ -12,7 +12,8 @@ export default async function Home() {
   const tasks = await loadTaks();
 
   return (
-    <section className='container mx-auto'>
+    <section className='container lg:mx-auto'>
+    
     <div className='grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6'>
       {
         tasks?.map(({id, title , description , createdAt})=>{
@@ -21,7 +22,9 @@ export default async function Home() {
           )
         })
       }
+    
     </div>
+    
     </section>
   );
 }
