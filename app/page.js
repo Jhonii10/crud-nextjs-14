@@ -6,6 +6,8 @@ const loadTaks = async ()=>{
   
 }
 
+export const revalidate = 60;
+
 export default async function Home() {
 
 
