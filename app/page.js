@@ -6,11 +6,11 @@ const loadTaks = async ()=>{
   
 }
 
-export const revalidate = 60;
+export const revalidate = 1;
 
 export default async function Home() {
 
-
+  
   const tasks = await loadTaks();
 
   return (

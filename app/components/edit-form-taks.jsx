@@ -29,9 +29,12 @@ export default function EditFormTaks() {
         })
 
         if(res.ok){
+             
             router.push('/')
             router.refresh()
+            
         }
+       
     }
 
 
