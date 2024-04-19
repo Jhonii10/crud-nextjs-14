@@ -10,7 +10,7 @@ export default function EditFormTaks() {
     const [description, setDescription] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:3000/api/tasks/${id}`)
+        fetch(`/api/tasks/${id}`)
             .then(response => response.json())
             .then(data => {
                 setTitle(data.title);
