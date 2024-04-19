@@ -19,6 +19,7 @@ export default function FormTaks() {
         })
 
         if(res.ok){
+
             router.push('/')
             router.refresh()
         }
