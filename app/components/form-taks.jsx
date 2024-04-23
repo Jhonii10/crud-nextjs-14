@@ -28,7 +28,7 @@ export default function FormTaks() {
 
   return (
     <div className='h-screen flex justify-center items-center'>
-      <form className='bg-slate-500 p-10 rounded w-1/3'  onSubmit={onSubmit}>
+      <form className='bg-slate-500 p-10 rounded md:w-1/3  w-72'  onSubmit={onSubmit}>
         <label htmlFor='title' className='font-bold text-sm '>
             Title
         </label>
